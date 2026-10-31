@@ -1,0 +1,957 @@
+{
+ "applications": 300,
+ "clean_applications": 139,
+ "clean_detail": [
+  "b7301-0035: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON",
+  "b7301-0040: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON",
+  "b7302-0018: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON",
+  "b7302-0054: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON",
+  "b7302-0058: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON",
+  "b7302-0089: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON",
+  "b7303-0009: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON",
+  "b7303-0018: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON",
+  "b7303-0054: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON",
+  "b7303-0055: AFF-DECL-MISSING, LAND-ROW-RECON, ROOM-RECON"
+ ],
+ "clean_flagged": 10,
+ "crashes": [],
+ "disclaimer": "Synthetic data, generated for this repository by an independent generator. Not real AICTE data. The numbers below describe this synthetic set only.",
+ "extraction": {
+  "notary.date": {
+   "ok": 300,
+   "total": 300
+  },
+  "notary.valid_till": {
+   "ok": 294,
+   "total": 300
+  },
+  "stamp.certificate_no": {
+   "ok": 300,
+   "total": 300
+  },
+  "stamp.duty": {
+   "ok": 300,
+   "total": 300
+  },
+  "udin": {
+   "ok": 300,
+   "total": 300
+  },
+  "udin.membership_no": {
+   "ok": 300,
+   "total": 300
+  }
+ },
+ "false_flags": [
+  {
+   "app": "b7301-0012",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: sig_modified, chrono",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7301-0012",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: sig_modified, chrono",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7301-0014",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: sig_modified, stamp_duty",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7301-0019",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7301-0021",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: udin_member, notary_expired",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7301-0021",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: udin_member, notary_expired",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7301-0021",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: udin_member, notary_expired",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7301-0026",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: sig_modified, chrono, udin_struct",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7301-0028",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: sig_modified",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7301-0028",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: sig_modified",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7301-0035",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7301-0035",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7301-0035",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7301-0040",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7301-0040",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7301-0040",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7301-0045",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7301-0057",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: sig_signer",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7301-0057",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: sig_signer",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7301-0057",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: sig_signer",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7301-0059",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: notary_expired, udin_member",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7301-0059",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: notary_expired, udin_member",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7301-0059",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: notary_expired, udin_member",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7301-0075",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: sig_modified",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7301-0083",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: stamp_party, sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7301-0093",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7301-0094",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: stamp_party",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7301-0094",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: stamp_party",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7301-0094",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: stamp_party",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0003",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: stamp_duty, decl_changed",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0003",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: stamp_duty, decl_changed",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0003",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: stamp_duty, decl_changed",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0018",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0018",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0018",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0023",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7302-0026",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: udin_struct, sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7302-0029",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image, decl_missing, udin_member",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7302-0034",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: notary_expired",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0034",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: notary_expired",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0034",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: notary_expired",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0038",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: stamp_party",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0038",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: stamp_party",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0038",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: stamp_party",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0042",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: notary_expired",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0042",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: notary_expired",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0042",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: notary_expired",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0054",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0054",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0054",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0058",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0058",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0058",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0059",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7302-0060",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image, decl_missing, stamp_duty",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7302-0064",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: udin_member",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0064",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: udin_member",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0064",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: udin_member",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0065",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7302-0066",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: sig_modified",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7302-0070",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: sig_image",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0070",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: sig_image",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0070",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: sig_image",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0070",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7302-0081",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7302-0081",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: sig_image",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0081",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: sig_image",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0081",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: sig_image",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0089",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7302-0089",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7302-0089",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7302-0097",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: sig_modified",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7302-0097",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: sig_modified",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0000",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7303-0002",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: chrono",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0002",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: chrono",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0002",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: chrono",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0003",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: sig_modified",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7303-0009",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0009",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0009",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0018",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0018",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0018",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0024",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: stamp_party",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0024",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: stamp_party",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0024",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: stamp_party",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0035",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: decl_added, sig_untrusted",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0035",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: decl_added, sig_untrusted",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0035",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: decl_added, sig_untrusted",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0036",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: sig_modified, decl_missing",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7303-0045",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: decl_missing, sig_image",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0045",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: decl_missing, sig_image",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0045",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: decl_missing, sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7303-0051",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7303-0054",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0054",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0054",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0055",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; clean application",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0055",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; clean application",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0055",
+   "cause": "ROOM-RECON fired but was not planted on this document; clean application",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0060",
+   "cause": "AFF-DECL-CHANGED fired but was not planted on this document; application carries: stamp_duty, sig_modified",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7303-0062",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: sig_modified, chrono",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0062",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: sig_modified, chrono",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0062",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: sig_modified, chrono",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0066",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: decl_changed, sig_signer, stamp_party",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0066",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: decl_changed, sig_signer, stamp_party",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0066",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: decl_changed, sig_signer, stamp_party",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0080",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: decl_missing, udin_struct",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0080",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: decl_missing, udin_struct",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0084",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: stamp_party",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0084",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: stamp_party",
+   "rule": "LAND-ROW-RECON"
+  },
+  {
+   "app": "b7303-0084",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: stamp_party",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0088",
+   "cause": "STAMP-CHRONO fired but was not planted on this document; application carries: sig_image",
+   "rule": "STAMP-CHRONO"
+  },
+  {
+   "app": "b7303-0097",
+   "cause": "AFF-DECL-MISSING fired but was not planted on this document; application carries: udin_member",
+   "rule": "AFF-DECL-MISSING"
+  },
+  {
+   "app": "b7303-0097",
+   "cause": "ROOM-RECON fired but was not planted on this document; application carries: udin_member",
+   "rule": "ROOM-RECON"
+  },
+  {
+   "app": "b7303-0097",
+   "cause": "LAND-ROW-RECON fired but was not planted on this document; application carries: udin_member",
+   "rule": "LAND-ROW-RECON"
+  }
+ ],
+ "label_accuracy": {
+  "ok": 553,
+  "total": 600
+ },
+ "label_misses": [
+  "b7301-0002 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7301-0015 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0023 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0030 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7301-0031 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0032 annex2.1(i) affidavit: engine expired, expected mismatch_detected",
+  "b7301-0037 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0048 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0053 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7301-0060 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0063 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0067 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0068 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0069 annex2.1(i) affidavit: engine expired, expected mismatch_detected",
+  "b7301-0080 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7301-0081 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7301-0089 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7302-0001 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7302-0007 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7302-0012 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7302-0015 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7302-0029 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7302-0030 annex2.1(i) affidavit: engine expired, expected mismatch_detected",
+  "b7302-0040 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7302-0048 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7302-0069 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7302-0082 annex2.1(i) affidavit: engine expired, expected mismatch_detected",
+  "b7302-0083 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7302-0090 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0025 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0026 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0027 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7303-0034 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0035 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7303-0038 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7303-0039 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0045 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7303-0063 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0065 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0069 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0071 annex2.1(i) affidavit: engine expired, expected mismatch_detected",
+  "b7303-0072 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0076 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0080 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0085 annex2.1(i) affidavit: engine manual_review_required, expected mismatch_detected",
+  "b7303-0092 annex2.1(i) affidavit: engine verified, expected mismatch_detected",
+  "b7303-0093 annex2.1(i) affidavit: engine expired, expected mismatch_detected"
+ ],
+ "manifest_sha256": "78bea8b7ad8d5c6859633986ddd0e19d8a43d8871728912aad779c153f640e7c",
+ "misses": [
+  {
+   "app": "b7302-0003",
+   "cause": "planted (stamp_duty, decl_changed); AFF-DECL-CHANGED did not fire on its document",
+   "rule": "AFF-DECL-CHANGED"
+  },
+  {
+   "app": "b7303-0035",
+   "cause": "planted (decl_added, sig_untrusted); AFF-DECL-ADDED did not fire on its document",
+   "rule": "AFF-DECL-ADDED"
+  },
+  {
+   "app": "b7303-0066",
+   "cause": "planted (decl_changed, sig_signer, stamp_party); AFF-DECL-CHANGED did not fire on its document",
+   "rule": "AFF-DECL-CHANGED"
+  }
+ ],
+ "recall_spread_across_seeds": {
+  "AFF-DECL-ADDED": [
+   0.5,
+   1.0
+  ],
+  "AFF-DECL-CHANGED": [
+   0.8,
+   1.0
+  ],
+  "AFF-DECL-MISSING": [
+   1.0,
+   1.0
+  ],
+  "AFF-HEADER": [
+   1.0,
+   1.0
+  ],
+  "LAND-ROW-RECON": null,
+  "NOTARY-EXPIRY": [
+   1.0,
+   1.0
+  ],
+  "ROOM-RECON": null,
+  "SIG-IMAGE": [
+   1.0,
+   1.0
+  ],
+  "SIG-MODIFIED": [
+   1.0,
+   1.0
+  ],
+  "SIG-SIGNER": [
+   1.0,
+   1.0
+  ],
+  "SIG-UNTRUSTED": [
+   1.0,
+   1.0
+  ],
+  "STAMP-CHRONO": [
+   1.0,
+   1.0
+  ],
+  "STAMP-DUTY": [
+   1.0,
+   1.0
+  ],
+  "STAMP-PARTY": [
+   1.0,
+   1.0
+  ],
+  "UDIN-MEMBER": [
+   1.0,
+   1.0
+  ],
+  "UDIN-STRUCT": [
+   1.0,
+   1.0
+  ]
+ },
+ "rules": {
+  "AFF-DECL-ADDED": {
+   "f1": 0.9090909090909091,
+   "fn": 1,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.8333333333333334,
+   "recall_ci95": [
+    0.43649056343635395,
+    0.9699474141282697
+   ],
+   "tp": 5
+  },
+  "AFF-DECL-CHANGED": {
+   "f1": 0.793103448275862,
+   "fn": 2,
+   "fp": 10,
+   "precision": 0.696969696969697,
+   "recall": 0.92,
+   "recall_ci95": [
+    0.7503348787704218,
+    0.977780066308908
+   ],
+   "tp": 23
+  },
+  "AFF-DECL-MISSING": {
+   "f1": 0.5079365079365079,
+   "fn": 0,
+   "fp": 31,
+   "precision": 0.3404255319148936,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8063865817272802,
+    1.0
+   ],
+   "tp": 16
+  },
+  "AFF-HEADER": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8241154494176252,
+    1.0
+   ],
+   "tp": 18
+  },
+  "LAND-ROW-RECON": {
+   "f1": null,
+   "fn": 0,
+   "fp": 30,
+   "precision": 0.0,
+   "recall": null,
+   "recall_ci95": [
+    0.0,
+    1.0
+   ],
+   "tp": 0
+  },
+  "NOTARY-EXPIRY": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8453561767357979,
+    0.9999999999999999
+   ],
+   "tp": 21
+  },
+  "ROOM-RECON": {
+   "f1": null,
+   "fn": 0,
+   "fp": 30,
+   "precision": 0.0,
+   "recall": null,
+   "recall_ci95": [
+    0.0,
+    1.0
+   ],
+   "tp": 0
+  },
+  "SIG-IMAGE": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8063865817272802,
+    1.0
+   ],
+   "tp": 16
+  },
+  "SIG-MODIFIED": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.7961107336956521,
+    1.0
+   ],
+   "tp": 15
+  },
+  "SIG-SIGNER": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8156763396284354,
+    1.0
+   ],
+   "tp": 17
+  },
+  "SIG-UNTRUSTED": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8453561767357979,
+    0.9999999999999999
+   ],
+   "tp": 21
+  },
+  "STAMP-CHRONO": {
+   "f1": 0.7142857142857143,
+   "fn": 0,
+   "fp": 16,
+   "precision": 0.5555555555555556,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8388698745050667,
+    1.0
+   ],
+   "tp": 20
+  },
+  "STAMP-DUTY": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.7846829880728186,
+    1.0
+   ],
+   "tp": 14
+  },
+  "STAMP-PARTY": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8156763396284354,
+    1.0
+   ],
+   "tp": 17
+  },
+  "UDIN-MEMBER": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8063865817272802,
+    1.0
+   ],
+   "tp": 16
+  },
+  "UDIN-STRUCT": {
+   "f1": 1.0,
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8063865817272802,
+    1.0
+   ],
+   "tp": 16
+  }
+ }
+}

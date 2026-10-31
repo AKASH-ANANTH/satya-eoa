@@ -1,0 +1,31 @@
+/* SignatureBadge (v0.8 neutral variant): icon plus sentence-case text on a neutral pill, 1px border,
+   6px radius. The text carries the meaning, so there is no colour coding. Tokens only. */
+.wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  max-width: 100%;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 1px 8px 1px 6px;
+  border: 1px solid var(--badge-neutral-border);
+  border-radius: 6px;
+  background: var(--badge-neutral-bg);
+  color: var(--th-fg);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.detail {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}

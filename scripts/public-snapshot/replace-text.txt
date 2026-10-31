@@ -1,0 +1,17 @@
+# Expressions scrubbed from every text blob AND every commit message of the public snapshot
+# (git-filter-repo --replace-text and --replace-message read this same file).
+# Syntax: literal==>replacement | regex:PATTERN==>replacement  (no ==> means ***REMOVED***).
+# Binary blobs are skipped by git-filter-repo.
+
+# Any email address except the allowed ones becomes "redacted". Allowed: noreply@github.com, noreply@anthropic.com,
+# *@users.noreply.github.com, and the reserved example/test domains (example.com, *.invalid, *.test).
+regex:(?<![A-Za-z0-9._%+-])(?!noreply@(?:github|anthropic)\.com\b)[A-Za-z0-9._%+-]+@(?!(?:users\.noreply\.github\.com|example\.com)\b)(?![A-Za-z0-9.-]*\.(?:invalid|test)\b)[A-Za-z0-9.-]+\.[A-Za-z]{2,}==>redacted
+
+# Session links that tools append to commit messages
+regex:(?m)^Claude-Session:.*\n?==>
+
+# Blind-run results quoted in a commit message
+regex:First run: .{0,400}?not yet diagnosed\.==>Results are not published.
+
+# Blind-set composition quoted in a commit message
+regex: \(139 clean\)==>

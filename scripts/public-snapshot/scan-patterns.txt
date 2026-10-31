@@ -1,0 +1,11 @@
+# Patterns that must have ZERO hits in any blob (text files, every revision) or commit message of the cleaned mirror.
+# Format: label|extended regular expression (grep -E, case-sensitive unless the label ends in "(i)").
+# Lockfiles, PDFs, images and fonts are excluded for the personal-data patterns (registry hashes, stream bytes).
+# Emails are checked separately by verify.sh (allow-list in that script).
+phone number|(^|[^0-9A-Za-z.-])(\+91[- ]?)?[6-9][0-9]{9}($|[^0-9A-Za-z-])
+Aadhaar-like number|\b[0-9]{4} ?[0-9]{4} ?[0-9]{4}\b
+PAN-like id|\b[A-Z]{5}[0-9]{4}[A-Z]\b
+college name (i)|rmkec
+other team or repository (i)|pramana|veritas|authentiq|seamark|pramiti|nirikshan|parakh|proofgraph|satyapan|satyapramaan|nirikshai|vericheck
+blind-run results (i)|10/139|10 of 139|117 false|553/600|78bea8b7|139 clean|First run: 
+session trailer|^Claude-Session:

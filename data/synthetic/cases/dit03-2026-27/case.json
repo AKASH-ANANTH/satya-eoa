@@ -1,0 +1,62 @@
+{
+  "_synthetic": "SYNTHETIC FIXTURE. Invented values for the SATYA-EoA demo and tests. Not a real institution, person, application or document.",
+  "case_id": "cas_01JD3M5A00000000000000DT03",
+  "application_id": "1-90000004217",
+  "permanent_id": "1-9000317",
+  "ay": "2026-27",
+  "regional_office": "Southern",
+  "state": "Tamil Nadu",
+  "route": "self_disclosure",
+  "stage": "2",
+  "category_set": [
+    "EoA Only"
+  ],
+  "institution_name": "Demo Institute of Technology 03",
+  "affidavit_draft": {
+    "template_id": "aff2-portal-2024-27",
+    "ay": "2026-27",
+    "category_set": [
+      "EoA Only"
+    ],
+    "header": {
+      "institution_name": "Demo Institute of Technology 03",
+      "address": "Demo Town 03, Demo District 07, Tamil Nadu",
+      "town": "Demo Town 03"
+    }
+  },
+  "stamp": {
+    "certificate_no": "IN-TN90326112004220Q",
+    "instrument": "e-stamp",
+    "article": "Article 4 Affidavit",
+    "second_party": "AICTE NEW DELHI",
+    "duty": 100,
+    "issued": "2026-11-21T11:05",
+    "notarised": "2026-11-22",
+    "notary_reg_no": "DEMO-NOT-0003",
+    "notary_valid_till": "2027-12-31"
+  },
+  "documents": [
+    {
+      "doc_id": "doc_SG34T9WEMMXMBZ8WA2JBXQX1DC",
+      "slot": "annex2.1(i) affidavit",
+      "declared_type": "affidavit-2",
+      "title": "Affidavit 2 (sworn copy)",
+      "format_type": "T",
+      "file": "affidavit-sworn.pdf",
+      "sha256": "f4798063c0945ec37498bbe833aa40e3ec041470a370d1173ae035b372d05db5",
+      "bytes": 79549,
+      "uploaded_at": "2026-11-24T16:40:00+05:30"
+    },
+    {
+      "doc_id": "doc_26F46FNPJKRJY08FVMKPHHKBPV",
+      "slot": "annex2.1(vii) audited accounts",
+      "declared_type": "audited-accounts",
+      "title": "Audited statement of accounts FY 2025-26",
+      "format_type": "E",
+      "file": "audited-accounts.pdf",
+      "sha256": "f94c22a5c083381b84f81a8db596b31fe2111adc252d39b1f84f5006f9f92fe9",
+      "bytes": 11651,
+      "uploaded_at": "2026-11-24T16:40:00+05:30"
+    }
+  ]
+}

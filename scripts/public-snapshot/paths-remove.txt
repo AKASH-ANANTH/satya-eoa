@@ -1,0 +1,28 @@
+# Paths removed from EVERY revision of the public snapshot (git-filter-repo --paths-from-file with --invert-paths).
+# One literal path per line (a directory removes everything below it). Lines starting with # and blank lines are ignored.
+# Built from the scans in docs/progress/PUBLIC-READY-REPORT.md. Nothing here is removed from the private repository.
+
+# Blind-run results (the generator and evaluator source in packages/blindgen stays)
+docs/eval
+docs/progress/BLIND-REPLAY-PROGRESS.md
+
+# Pre-public checks and internal housekeeping
+docs/progress/PRE-PUBLIC-CHECK.md
+docs/progress/BRANCH-CLEANUP.md
+docs/progress/PROGRESS-HOUSEKEEPING.md
+
+# Build prompts handed to a coding assistant (chat handoff); older revisions kept a copy in a bundle folder
+docs/prompts
+satya-eoa-slice0-bundle/docs/prompts
+
+# This preparation work
+docs/progress/PUBLIC-READY-REPORT.md
+docs/progress/PUBLIC-READY-PROGRESS.md
+docs/progress/DECISIONS-PUBLIC-READY.md
+scripts/public-snapshot
+
+# Optional, uncomment to also drop (decided by Hrishi, see the report):
+# CLAUDE.md
+# docs/DEMO-CHECKLIST.md
+docs/DEMO-SCRIPT.md
+# docs/DEMO-NOTES.md
