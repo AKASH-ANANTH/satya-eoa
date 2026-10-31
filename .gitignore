@@ -1,5 +1,6 @@
 # ---- Local files ----
 *.pptx
+AGENTS.md
 
 # ---- Real data: must never be committed (guard rail 3) ----
 data/real-samples/
