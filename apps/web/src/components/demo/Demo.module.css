@@ -6,6 +6,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 0.125rem var(--space-2);
+  border-radius: 4px;
 }
 
 .band[data-band="high"] {
@@ -44,9 +45,11 @@
   font: inherit;
   padding: var(--space-2) var(--space-3);
   border: 1px solid var(--color-field);
+  border-radius: 6px;
   background: var(--color-surface);
   color: var(--color-text);
   min-height: 2.5rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 4%);
 }
 
 .textarea {
@@ -63,11 +66,15 @@
   background: var(--color-chrome);
   color: var(--color-surface);
   border: 1px solid var(--color-chrome);
+  border-radius: 6px;
   cursor: pointer;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .button:hover {
   background: var(--color-chrome-2);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 12%);
 }
 
 .button:disabled {
@@ -133,7 +140,9 @@
 
 .flagItem {
   border: 1px solid var(--color-rule);
+  border-radius: 6px;
   background: var(--color-surface);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
   padding: var(--space-3) var(--space-4);
   margin-bottom: var(--space-3);
 }
@@ -216,6 +225,8 @@
 .viewer {
   background: var(--color-viewer);
   border: 1px solid var(--color-rule);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
   padding: var(--space-3);
 }
 
@@ -254,6 +265,7 @@
 .chain {
   padding: var(--space-3) var(--space-4);
   border: 2px solid;
+  border-radius: 6px;
   margin-bottom: var(--space-4);
   font-weight: 700;
 }
@@ -307,6 +319,8 @@
 .alertList li {
   background: var(--color-surface);
   border: 1px solid var(--color-rule);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 4%);
   padding: var(--space-3) var(--space-4);
   margin-bottom: var(--space-2);
 }

@@ -9,16 +9,19 @@
   display: inline-block;
   padding: var(--space-2) var(--space-4);
   border: 1px solid var(--color-chrome);
-  border-radius: 4px;
+  border-radius: 6px;
   background: var(--color-chrome);
   color: var(--color-surface);
   font-family: var(--font-caps);
   font-weight: 800;
   text-decoration: none;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .primary:hover {
   background: var(--color-chrome-2);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 12%);
 }
 
 .grid {
@@ -31,7 +34,15 @@
   min-width: 0;
   padding: var(--space-4);
   border: 1px solid var(--color-rule);
+  border-radius: 6px;
   background: var(--color-surface);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 4%);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.panel:hover {
+  border-color: var(--color-field);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 6%);
 }
 
 .panel h2 {
@@ -58,10 +69,13 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-3);
-  padding: var(--space-1) 0;
+  padding: var(--space-2);
+  margin: 0 calc(-1 * var(--space-2));
   border-bottom: 1px solid var(--color-rule);
+  border-radius: 4px;
   color: var(--color-text);
   text-decoration: none;
+  transition: background-color 0.12s ease;
 }
 
 .row:hover {
